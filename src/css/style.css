@@ -1,0 +1,100 @@
+.logo {
+    position: relative;
+    margin-top: 12px;
+}
+.phone {
+    position: relative;
+    float: right;
+    right: 22px;
+    top: 40px;
+}
+#footer {
+    background: black;
+}
+.fixed-bottom {
+    height: 55px;
+    margin-right: 12px;
+    margin-left: 10px;
+}
+.bg-menu {
+    background: #231f20;
+    border-radius: 0;
+}
+.bg-orange {
+    background: #eb5017;
+}
+.footer {
+    margin-left: 60px;
+    margin-bottom: 31px;
+    list-style-type: none;
+}
+.footer li {
+    position: relative;
+    float: left;
+    margin-right: 26px;
+}
+.footer a {
+    color: white;
+    text-decoration: underline;
+    font-size: 12pt;
+}
+.footer a:hover {
+    color: #eb5017;
+}
+.menu{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 12px;
+    height: 44px;
+    background: #231f20;
+    font-size: 14pt;
+}
+.menu-ul {
+    width: 100%;
+    background: #eb5017;
+    height: 44px;
+}
+.menu-li {
+    background: #231f20;
+    width: 16.5%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+.menu-li:hover {
+    background: #eb5017;
+}
+.menu-li a {
+    color: white;
+}
+.menu li:first-child {
+    margin-left: 0;
+}
+.menu li:last-child {
+    margin-right: 0;
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    background: #eb5017;
+    color: white;
+}
+.breadcrumb {
+    padding: 0;
+    background: white;
+    margin-left: 30px;
+    margin-top: 16px;
+}
+.breadcrumb-item a{
+    color: black;
+    text-decoration: underline;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    color: black;
+    content: '-';
+}
+.breadcrumb-item + .active {
+    color: black;
+}
+
