@@ -5,14 +5,13 @@
     $date = $_POST['date'];
     $date = (string)$date[3] . (string)$date[4];
 
-    $percent = 10;                  //процентная ставка банка - 10%
-    $daysy = 365;                   //количество дней в году
-    $summn1 = $sum_vklada;          //сумма на счете на конец прошлого месяца
-    $summadd = $sum_refill_vklad;   //сумма ежемесячного пополнения
-    $daysn = (int)$date;                     //количество дней в данном месяце, на которые приходился вклад
+    $percent = 0.1;             //процентная ставка банка - 10%
+    $m = 12;                    //период капитализации и дополнительных взносов
+    $n = $years;                //вклад на кол-во лет
+    $s = $sum_vklada;           //сумма на счете на конец прошлого месяца
+    $sv = $sum_refill_vklad;    //сумма ежемесячного пополнения
+    $daysn = (int)$date;        //количество дней в данном месяце, на которые приходился вклад
 
-
-    $summn = $summn1 + ($summn1 + $summadd)*$daysn*($percent / $daysy);
-
-    echo round($summn);
+    $result = $sv * ($m / $percent) * (pow((1 + $percent / $m),($m * $n)) - 1) + $s * (pow((1 + $percent / $m),($m * $n )));
+    echo round($result, 2);
 ?>

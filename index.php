@@ -122,6 +122,6 @@
         xx.oninput = () => yy.value = xx.value;
         yy.oninput = () => xx.value = yy.value;
     </script>
-    <script type="text/javascript" src="src/main.js"></script>
+    <script type="text/javascript" src="src/js/main.js"></script>
 </body>
 </html>

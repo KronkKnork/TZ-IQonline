@@ -34,7 +34,7 @@ $("#calcc").on("click", function() {
     }
     while (true) {
         if ((sum_vklada === '') || (sum_vklada < 10000) || (sum_vklada >  3000000)) {
-            $("#result").text("Сумма вклада может иметь быть от 10000 до 3000000");
+            $("#result").text("Сумма вклада может быть от 10000 до 3000000");
             return false;
         } else if ((date === '')) {
             $("#result").text("Вы не выставили дату");
